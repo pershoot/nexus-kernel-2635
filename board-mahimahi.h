@@ -23,6 +23,9 @@
 #define MSM_SMI_BASE		0x02B00000
 #define MSM_SMI_SIZE		0x01500000
 
+#define MSM_PMEM_VENC_BASE      0x02B00000
+#define MSM_PMEM_VENC_SIZE      0x00800000
+
 /* Camera PMEM has been moved here from EBI1 and extended to 15MB */
 #define MSM_PMEM_CAMERA_BASE    0x02B00000
 #define MSM_PMEM_CAMERA_SIZE    0x00F00000
