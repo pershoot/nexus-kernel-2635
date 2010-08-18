@@ -465,10 +465,10 @@ uint32_t acpuclk_get_switch_time(void)
 unsigned long acpuclk_power_collapse(void)
 {
 	int ret = acpuclk_get_rate();
-        ret *= 1000;
+	ret *= 1000;
 	if (ret > drv_state.power_collapse_khz)
 		acpuclk_set_rate(drv_state.power_collapse_khz, 1);
-        return ret; 
+	return ret;
 }
 
 unsigned long acpuclk_get_wfi_rate(void)
@@ -479,10 +479,10 @@ unsigned long acpuclk_get_wfi_rate(void)
 unsigned long acpuclk_wait_for_irq(void)
 {
 	int ret = acpuclk_get_rate();
-        ret *= 1000;
+	ret *= 1000;
 	if (ret > drv_state.wait_for_irq_khz)
 		acpuclk_set_rate(drv_state.wait_for_irq_khz, 1);
-        return ret;
+	return ret;
 }
 
 void __init msm_acpu_clock_init(struct msm_acpu_clock_platform_data *clkdata)
